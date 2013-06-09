@@ -1,0 +1,35 @@
+<head>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+  <script>
+    $('body').keypress(function(event){
+      switch(event.which) {
+        case(106):
+          console.log("j -> down");
+          break;
+        case(104):
+          console.log("h -> left");
+          break;
+        case(107):
+          console.log("k -> up");
+          break;
+        case(108):
+          console.log("l -> right");
+          break;
+        case(99):
+          console.log("c -> context");
+          break;
+        case(13):
+          console.log("enter");
+          break;
+        case(117):
+          console.log("u -> back");
+          break;
+        default:
+          console.log("unknown key:" + event.which);
+          break;
+      }
+    });
+  </script>
+</body>
